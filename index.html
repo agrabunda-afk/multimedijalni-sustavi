@@ -1,0 +1,143 @@
+
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grabikop | Iskopi i priprema terena</title>
+  <meta name="description" content="Grabikop - iskopi bagerom, priprema terena, temelji, septičke jame, bazeni. Pula i Istra (30 km)." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">GRABIKOP</a>
+
+      <nav class="nav">
+        <a href="#Početna">Početna</a>
+        <a href="#grafika">Grafika</a>
+        <a href="#galerija">Galerija</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Iskopi bagerom i priprema terena u Istri</h1>
+          <p>
+            Radimo iskope za temelje, bazene, septičke jame, odvoz materijala i pripremu gradilišta.
+            Područje: Pula + 30 km.
+          </p>
+          
+
+        
+
+    <section id="Početna" class="section">
+      <div class="container">
+        <h2>Početna</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Iskopi za temelje</h3>
+            <p>Trakasti temelji, priprema za ploču, nivelacija terena.</p>
+          </article>
+          <article class="card">
+            <h3>Bazeni i septičke jame</h3>
+            <p>Iskop, odvoz, priprema podloge i pristup gradilištu.</p>
+          </article>
+          <article class="card">
+            <h3>Odvoz materijala</h3>
+            <p>Utovar i odvoz viška zemlje/šute, dovoz tampona.</p>
+          </article>
+          <article class="card">
+            <h3>Priprema gradilišta</h3>
+            <p>Čišćenje terena, ravnanje, pristupni put, tamponiranje.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   <section id="grafika" class="section alt">
+  <div class="container">
+    <h2>Grafika</h2>
+
+    <!-- TEKST GORE -->
+    <div class="card">
+      <h3>Vektorska grafika (Inkscape)</h3>
+      <p>
+        Za ovaj dio projekta izrađena je vektorska grafika korištenjem programa Inkscape.
+        Bitmap fotografija bagera pretvorena je u vektorski obris pomoću alata Trace Bitmap,
+        a zatim je korištena maska (clip) kako bi se ispuna prikazivala unutar oblika objekta.
+      </p>
+    </div>
+
+    <!-- SLIKE ISPOD -->
+    <div class="grafika-images">
+      <img src="bager2.jpeg" alt="Originalna fotografija bagera – Grabikop">
+      <img src="bager-vektor.png" alt="Vektorski obris bagera izrađen u Inkscapeu">
+    </div>
+<div class="card grafika-opis">
+  <h3>Opis postupka izrade vektorske grafike</h3>
+  <p>
+    Za izradu vektorske grafike korišten je program <strong>Inkscape</strong>.
+    Kao polazna točka korištena je fotografija bagera, koja je poslužila kao podloga
+    za izradu vektorskog oblika.
+  </p>
+  <p>
+    Fotografija je uvezena u projekt i smještena u donji sloj, uz smanjenu neprozirnost,
+    kako bi se lakše pratio obris tijekom rada. Obris bagera izrađen je ručno pomoću
+    <strong>Bezier (Pen) alata</strong>, pri čemu su dodavane i prilagođavane točke
+    kako bi se dobio što jednostavniji i čišći oblik.
+  </p>
+  <p>
+    Dobiveni obris korišten je kao maska (clip), tako da se ispuna i pozadina prikazuju
+    samo unutar oblika bagera. Na kraju je grafika izvezena u <strong>PNG</strong> format
+    za korištenje na web stranici, dok je izvorna datoteka spremljena u
+    <strong>SVG</strong> formatu.
+  </p>
+</div>
+
+  </div>
+</section>
+
+
+    <section id="galerija" class="section">
+      <div class="container">
+        <h2>Galerija</h2>
+        
+
+        <div class="gallery-single">
+  <img src="bager.jpeg" alt="Iskop bagerom – Grabikop">
+  <p class="muted">Obrađena fotografija bagera (GIMP)</p>
+  <p class="image-description">
+    Fotografija je obrađena u programu <strong>GIMP</strong>. Prvo je izvršeno kadriranje slike kako bi se uklonili
+    nepotrebni dijelovi pozadine i naglasio glavni objekt – bager u radu. Zatim je korišten alat
+    <em>Levels</em> za poboljšanje kontrasta i vidljivosti detalja. Po potrebi je dodatno prilagođena
+    svjetlina i kontrast slike. Slika je potom blago izoštrena pomoću filtra
+    <em>Unsharp Mask</em>. Na kraju je slika skalirana na širinu od 1400 px i izvezena u JPG formatu,
+    optimiziranom za web prikaz.
+  </p>
+</div>
+
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Grabikop. Sva prava pridržana.</p>
+      <p class="muted">Statični projekt (HTML + CSS).</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
